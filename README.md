@@ -1,3 +1,11 @@
+# Archived
+
+I tried to update this to the latest packages, but needed more work then I have time for.
+Was getting this error in it's current state:
+
+    [h265ize]: math.eval is not a function. Details can be found below in debug mode.
+
+
 # h265ize
 
 h265ize is a fire and forget weapon. A nodejs utility utilizing ffmpeg to encode large quantities of videos with the hevc codec. For more information visit [ayrton.sparling.us](https://ayrton.sparling.us/index.php/ultimate-x265hevc-encoding-script-h265ize/ "Ayrton Sparling").
