@@ -1025,10 +1025,10 @@ load-json-file@^1.0.0:
     pinkie-promise "^2.0.0"
     strip-bom "^2.0.0"
 
-local-git-sync@^1.8.3:
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/local-git-sync/-/local-git-sync-1.8.3.tgz#70698b7de2b2fccece626ac0f47b19f5e3cfeea2"
-  integrity sha1-cGmLfeKy/M7OYmrA9HsZ9ePP7qI=
+local-git-sync@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/local-git-sync/-/local-git-sync-2.0.0.tgz#c57caada2fc62e76cb8c438b0830343796a3db0e"
+  integrity sha512-H7285fApSWiY6HbXq5XqyRdy9osMpN5I/3suci9yPby4riS9v05fo8/ddGgTFE0SnHsCUcU8AUzGRu6X/5MuFA==
   dependencies:
     graceful-fs "4.1.6"
     shelljs "0.7.4"
