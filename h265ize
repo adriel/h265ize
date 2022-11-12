@@ -17,7 +17,6 @@ const Pauser = require('promise-pauser');
 //const stackTrace = require('stack-trace');
 //require("long-stack-traces");
 const yargs = require('yargs');
-const git = require('local-git-sync');
 const chokidar = require('chokidar');
 
 const helpers = require(Path.join(__dirname, 'lib/helpers.js'));
@@ -83,33 +82,8 @@ function runCli() {
             process.exit(0);
         }
 
-        // Show version
-        if (args.version) {
-            if (packageSettings.mode === 'production') {
-                console.log(packageSettings.name, packageSettings.version);
-                process.exit(0);
-            } else if (packageSettings.mode === 'development') {
-                let branch = 'unknown';
-                let short = "unknown";
-                if (packageSettings.gitHead && packageSettings._requested) {
-                    let url = packageSettings._requested.hosted.directUrl;
-                    branch = packageSettings._requested.hosted.directUrl.substring(url.lastIndexOf('/', url.length - 14), url.length - 13).substr(1, url.length);
-                    short = packageSettings.gitHead.substr(0, 7);
-                } else {
-                    try {
-                        branch = git.branch(__dirname);
-                        short = git.short(__dirname);
-                    } catch (e) {
-                        console.log('Unabled to retrieve version:', e);
-                        process.exit(1);
-                    }
-                }
-                console.log(packageSettings.name, branch + '#' + short);
-                process.exit(0);
-            }
-        } else {
-            resolve(args);
-        }
+        resolve(args);
+
     }).then(function(args) {
 
         // Initiate a new Encoder

@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FallingSnow/h265ize.git"
+    "url": "git+https://github.com/adriel/h265ize.git"
   },
   "keywords": [
     "video",
@@ -22,15 +22,15 @@
     "library",
     "transcode"
   ],
-  "author": "Ayrton Sparling",
+  "author": "Adriel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FallingSnow/h265ize/issues"
+    "url": "https://github.com/adriel/h265ize/issues"
   },
-  "homepage": "https://github.com/FallingSnow/h265ize#readme",
+  "homepage": "https://github.com/adriel/h265ize#readme",
   "dependencies": {
     "bluebird": "^3.4.6",
-    "chokidar": "^1.6.1",
+    "chokidar": "^3.5.3",
     "colors": "^1.1.2",
     "filesize": "^3.3.0",
     "fluent-ffmpeg": "^2.1.0",
@@ -38,10 +38,9 @@
     "gpu-info": "0.0.1",
     "hasbin": "^1.2.3",
     "keypress": "^0.2.1",
-    "local-git-sync": "^1.8.3",
     "lodash": "^4.16.6",
     "long-stack-traces": "^0.1.2",
-    "mathjs": "^3.7.0",
+    "mathjs": "^11.3.3",
     "memorystream": "^0.3.1",
     "mime": "^1.3.4",
     "moment": "^2.16.0",
@@ -56,7 +55,7 @@
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.1.2"
+    "mocha": "^10.1.0"
   },
   "eslintConfig": {
     "parserOptions": {
